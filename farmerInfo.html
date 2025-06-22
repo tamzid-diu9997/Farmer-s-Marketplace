@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Farmer Sign Up</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #77a264;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      background-color: #fffdf5;
+      padding: 30px 20px;
+      border-radius: 30px;
+      width: 90%;
+      max-width: 500px; /* Increased width for desktop */
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      font-size: 28px;
+      color: #1e2e1e;
+      margin-bottom: 5px;
+    }
+
+    h2 {
+      font-size: 16px;
+      font-weight: normal;
+      color: #3b5039;
+      margin-bottom: 30px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+      color: #2d472c;
+    }
+
+    input {
+      width: 96%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 12px;
+      border: none;
+      background-color: #ede7ce;
+      font-size: 14px;
+    }
+
+    button {
+      width: 100%;
+      background-color: #6d8b5f;
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 15px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #59764a;
+    }
+
+    @media (min-width: 768px) {
+      .container {
+        padding: 40px 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Sign Up</h1>
+    <h2>For Farmer's</h2>
+    <form form action="farmerHome.html" method="get">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="location">Location</label>
+      <input type="text" id="location" name="location" required />
+
+      <label for="nid">NID Number</label>
+      <input type="text" id="nid" name="nid" required />
+
+      <label for="mobile">Mobile Number</label>
+      <input type="tel" id="mobile" name="mobile" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required />
+
+      <button type="submit">Sign Up</button>
+    </form>
+  </div>
+</body>
+</html>
